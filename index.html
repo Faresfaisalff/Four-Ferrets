@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,13 @@
         body {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* Center items horizontally */
             background-color: #fff; /* White background */
             color: #000; /* Black text color */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: center; /* Center text */
             height: 100vh;
             overflow-y: scroll;
             scroll-behavior: smooth; /* Smooth scrolling */
@@ -102,6 +102,7 @@
         .logo-container {
             margin-top: 70px; /* Adjust this value as needed to position the logo below the navbar */
             display: flex;
+            justify-content: center; /* Center the logo horizontally */
             flex-direction: column;
             align-items: center;
         }
@@ -113,14 +114,12 @@
             border-radius: 10px;
             margin-top: 20px;
             color: #000; /* Text color inside content to black */
+            text-align: center; /* Center text */
         }
 
-        h1, h2 {
-            margin-top: 0;
-        }
-
-        p {
-            line-height: 1.6;
+        .content img {
+            display: block;
+            margin: 20px auto; /* Center images within their container */
         }
 
         .footer {
@@ -180,6 +179,11 @@
 
         .btn:hover {
             background-color: #0056b3;
+        }
+
+        .arabic-content {
+            text-align: right; /* Align Arabic text to the right */
+            direction: rtl; /* Set text direction to right-to-left for Arabic content */
         }
     </style>
 </head>
