@@ -9,31 +9,31 @@
         body {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center items horizontally */
-            background-color: #fff; /* White background */
-            color: #000; /* Black text color */
+            align-items: center;
+            background-color: #fff;
+            color: #000;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center; /* Center text */
+            text-align: center;
             height: 100vh;
             overflow-y: scroll;
-            scroll-behavior: smooth; /* Smooth scrolling */
+            scroll-behavior: smooth;
         }
 
         header {
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the navbar */
-            position: fixed; /* Fixes the navbar at the top */
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
             top: 0;
-            z-index: 1000; /* Ensures the navbar is on top */
+            z-index: 1000;
         }
 
         nav {
             display: flex;
-            justify-content: space-between; /* Aligns items at the ends */
+            justify-content: space-between;
             align-items: center;
-            padding: 10px 20px; /* Adjust padding as needed */
+            padding: 10px 20px;
         }
 
         nav ul {
@@ -45,26 +45,26 @@
         }
 
         nav ul.left-links {
-            margin-right: auto; /* Pushes the left links to the left */
+            margin-right: auto;
         }
 
         nav ul.right-links {
-            margin-left: auto; /* Pushes the right links to the right */
+            margin-left: auto;
         }
 
         nav ul li {
-            margin: 0 15px; /* Space between nav items */
-            position: relative; /* For dropdown positioning */
+            margin: 0 15px;
+            position: relative;
         }
 
         nav ul li a {
-            color: #fff; /* White text color */
+            color: #fff;
             text-decoration: none;
-            font-size: 18px; /* Adjust font size as needed */
+            font-size: 18px;
         }
 
         nav ul li a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            text-decoration: underline;
         }
 
         .dropdown-content {
@@ -74,10 +74,10 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            top: 40px; /* Adjust dropdown position */
-            left: 0; /* Align dropdown to the left */
+            top: 40px;
+            left: 0;
             padding: 10px;
-            flex-direction: column; /* Vertical list */
+            flex-direction: column;
         }
 
         .dropdown-content a {
@@ -100,9 +100,9 @@
         }
 
         .logo-container {
-            margin-top: 70px; /* Adjust this value as needed to position the logo below the navbar */
+            margin-top: 70px;
             display: flex;
-            justify-content: center; /* Center the logo horizontally */
+            justify-content: center;
             flex-direction: column;
             align-items: center;
         }
@@ -110,25 +110,27 @@
         .content {
             max-width: 800px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent background for readability */
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             margin-top: 20px;
-            color: #000; /* Text color inside content to black */
-            text-align: center; /* Center text */
+            color: #000;
+            text-align: center;
         }
 
         .content img {
             display: block;
-            margin: 20px auto; /* Center images within their container */
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
         }
 
         .footer {
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the footer */
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 20px 0;
-            position: relative; /* Changed to ensure it doesn’t overlap content */
+            position: relative;
             text-align: center;
-            margin-top: auto; /* Ensures footer is pushed to the bottom of the page */
+            margin-top: auto;
         }
 
         .contact-icons {
@@ -138,17 +140,16 @@
         }
 
         .contact-icons a {
-            color: #fff; /* White icon color */
+            color: #fff;
             text-decoration: none;
-            font-size: 24px; /* Adjust icon size as needed */
-            margin: 0 10px; /* Space between icons */
+            font-size: 24px;
+            margin: 0 10px;
         }
 
         .contact-icons a:hover {
-            color: #e57373; /* Change icon color on hover */
+            color: #e57373;
         }
 
-        /* Add these styles to your styles.css to ensure the links are visible */
         #auth-links li {
             display: inline-block;
             margin: 0 10px;
@@ -156,11 +157,11 @@
 
         #auth-links a {
             text-decoration: none;
-            color: #fff; /* White text color */
+            color: #fff;
         }
 
         #auth-links a:hover {
-            color: #007bff; /* Example hover color */
+            color: #007bff;
         }
 
         .btn {
@@ -182,27 +183,90 @@
         }
 
         .arabic-content {
-            text-align: right; /* Align Arabic text to the right */
-            direction: rtl; /* Set text direction to right-to-left for Arabic content */
+            text-align: right;
+            direction: rtl;
         }
 
         .arabic-content h1 {
-            font-size: 32px; /* Larger font size for main headings */
+            font-size: 32px;
         }
 
         .arabic-content h2 {
-            font-size: 28px; /* Larger font size for subheadings */
-            text-align: center; /* Center the headings */
-            margin-left: 20px; /* Adjust the margin as needed to move slightly to the left */
+            font-size: 28px;
+            text-align: center;
+            margin-left: 20px;
         }
 
         .arabic-content p {
-            font-size: 18px; /* Larger font size for paragraphs */
+            font-size: 18px;
+        }
+
+        ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+
+            .content {
+                padding: 15px;
+                margin-top: 80px; /* Adjust this value as needed */
+            }
+
+            .arabic-content h1 {
+                font-size: 28px;
+            }
+
+            .arabic-content h2 {
+                font-size: 24px;
+            }
+
+            .arabic-content p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .logo-container {
+                margin-top: 100px; /* Adjust this value as needed */
+            }
+
+            .content {
+                padding: 10px;
+                margin-top: 100px; /* Adjust this value as needed */
+            }
+
+            .arabic-content h1 {
+                font-size: 24px;
+            }
+
+            .arabic-content h2 {
+                font-size: 20px;
+            }
+
+            .arabic-content p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
         <nav>
             <ul class="left-links">
@@ -212,14 +276,11 @@
             </ul>
         </nav>
     </header>
-    <!-- Logo and Content -->
     <div id="home" class="logo-container">
         <img src="logo-removebg-preview.png" alt="Four Ferrets Logo" class="logo">
     </div>
     <div id="content" class="content">
         <h1>Welcome to Four Ferrets Travel</h1>
-        
-        <!-- Added Arabic Text -->
         <div class="arabic-content">
             <p>الأعمال التجارية التي تهدف إلى المال فقط هي أعمال قصيرة الأمد. هذا هو المبدأ الذي اعتمدته مجموعة فور فيرتس ترافل منذ أن بدأت أعمالها في جمهورية مصر العربية. بالتفاني في العمل الجماعي والالتزام بالتحسين المستمر، أصبحت شركتنا لا تنمو فحسب، بل تنمو بسرعة. ولهذا السبب، يسرنا أن نقدم المرحلة المزدهرة التي وصلت إليها مجموعتنا على مر السنين. بدأنا مكتبنا الأول في القاهرة، مصر، مع 15 فردًا من فريق الشباب الذين يعملون بجد وتفانٍ على مدار الساعة لبناء أساس قوي لمستقبل مالي مزدهر.</p>
             <p>نحن لا ننمو فقط كفريق، ولكننا نلتزم بتقديم أفضل نوعية من الخدمة لعملائنا الكرام. نظراً لأننا اعتمدنا هذه الإدارة، فقد تطور فريق أكثر تفانياً وثورية داخل مجموعتنا، ومن المتوقع أن يصل عدد أعضائنا إلى 1500 عضو بحلول عام 2025.</p>
@@ -248,7 +309,6 @@
                 <li>المساعدة في حجز تذاكر الطيران للذهاب لأداء مناسك العمرة وإعادة تأكيد الحجز للرحلات العودة إلى أرض الوطن.</li>
             </ul>
         </div>
-
         <a href="terms.html" class="btn"> Terms of Use</a>
     </div>
     <!-- Footer with Contact Information -->
