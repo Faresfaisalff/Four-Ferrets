@@ -34,6 +34,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            flex-wrap: wrap;
         }
 
         nav ul {
@@ -201,9 +202,14 @@
             font-size: 18px;
         }
 
-        ul {
-            padding-left: 20px;
-            text-align: left;
+        .arabic-content ul {
+            padding-right: 20px;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .arabic-content ul li {
+            list-style-position: inside;
         }
 
         @media (max-width: 768px) {
@@ -234,13 +240,25 @@
         }
 
         @media (max-width: 480px) {
+            nav ul.left-links {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            nav ul.right-links {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
             nav ul {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
             }
 
             nav ul li {
-                margin: 5px 0;
+                margin: 5px 10px;
             }
 
             .logo-container {
@@ -289,10 +307,7 @@
             <p>تلتزم شركة فور فيرتس ترافل بتوفير مستقبل مزدهر، مع مراعاة تقديم أفضل نوعية من الخدمة، والتخطيط لبناء أساس مالي أكثر أماناً وقوة.</p>
             <h2>التخصص</h2>
             <img src="ECG.jpeg" alt="Specialization Image">
-            <p>فور فيرتس ترافل متخصصة في تنظيم العمرة العائلية إلى الأراضي المقدسة في مكة المكرمة والمدينة المنورة، باستخدام أفضل استراتيجيات التسويق والمبيعات الحديثة بمساعدة فريق من الخبراء والعاملين الجادين.</p>
-            <h2>الرؤية</h2>
-            <img src="nabwy.jpeg" alt="Vision Image">
-            <p>في السنوات القادمة، نخطط لخدمة أكبر عدد من المعتمرين من داخل جمهورية مصر العربية وبلدان عربية أخرى. نحن نعتز بالقيم العائلية، وبرنامجنا مصمم لمساعدة العائلات على الاستمتاع بزيارة الأراضي المقدسة، حيث يمكن للأباء نقل فرحة الإيمان إلى أطفالهم بينما يقومون بالعمرة ويصلون مع الآلاف من المسلمين الآخرين في المسجد الحرام.</p>
+            <p>فور فيرتس ترافل متخصصة في تنظيم العمرة العائلية إلى الأراضي المقدسة في مكة المكرمة والمدينة المنورة، باستخدام أفضل استراتيجيات التسويق والمبيعات الحديثة بمساعدة فريق من الخبراء والعاملين المتخصصين في خدمة الآلاف من المسلمين حول العالم الذين يسعون إلى الاستمتاع بزيارة الأراضي المقدسة، حيث يمكن للأباء نقل فرحة الإيمان إلى أطفالهم بينما يقومون بالعمرة ويصلون مع الآلاف من المسلمين الآخرين في المسجد الحرام.</p>
             <h2>المهمة</h2>
             <img src="Royal Clock.jpeg" alt="Mission Image">
             <p>نحن نكافح دائماً للحفاظ على مكانتنا كمجموعة مالية رائدة في سوق سريع النمو. مهمتنا هي تقديم تخطيط متطور، وتطوير لا هوادة فيه، وتسويق ثوري، ورضا خدمة لا يمكن إنكاره.</p>
@@ -311,7 +326,6 @@
         </div>
         <a href="terms.html" class="btn"> Terms of Use</a>
     </div>
-    <!-- Footer with Contact Information -->
     <footer id="contact" class="footer">
         <div class="contact-icons">
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
