@@ -19,7 +19,7 @@
             text-align: center;
             height: 100vh;
             overflow-y: scroll;
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; 
         }
 
         header {
@@ -110,7 +110,7 @@
         }
 
         .content {
-            max-width: 800px;
+            width: 100%;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -118,6 +118,14 @@
             color: #000;
             text-align: center;
         }
+        
+        .arabic-content {
+            text-align: right;
+            direction: rtl;
+            width: 100%; /* Ensure it takes up the full width */
+            box-sizing: border-box; /* Include padding in the width calculation */
+        }
+        
 
         .content img {
             display: block;
@@ -184,10 +192,6 @@
             background-color: #0056b3;
         }
 
-        .arabic-content {
-            text-align: right;
-            direction: rtl;
-        }
 
         .arabic-content h1 {
             font-size: 32px;
