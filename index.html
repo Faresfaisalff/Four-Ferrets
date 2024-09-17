@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Ferrets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="left-links">
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home" class="logo-container">
+        <img src="logo-removebg-preview.png" alt="Four Ferrets Logo" class="logo">
+    </div>
+    <div id="content" class="content">
+        <h1>Welcome to Four Ferrets Travel</h1>
+        <p>Four Ferrets Travel aims to provide excellent services to its clients, ensuring satisfaction and dedication across all operations. Our mission is to grow and offer unparalleled travel experiences to the sacred cities of Mecca and Medina.</p>
+
+        <!-- New Programs Section -->
+        <section id="programs" class="programs-section">
+            <h2>Our Travel Programs</h2>
+            <div class="program-container">
+                <!-- 3 Stars Program Box -->
+                <div class="program-box">
+                    <img src="3stars.jpg" alt="3 Stars Program">
+                    <h3>3 Stars Program</h3>
+                    <p>Affordable accommodations with 3-star hotel services in Mecca and Medina.</p>
+                    <a href="3-stars.html">Learn More</a>
+                </div>
+
+                <!-- 4 Stars Program Box -->
+                <div class="program-box">
+                    <img src="4stars.jpg" alt="4 Stars Program">
+                    <h3>4 Stars Program</h3>
+                    <p>Premium accommodations with 4-star hotel services in Mecca and Medina.</p>
+                    <a href="4-stars.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Client Comments Section -->
+        <section id="comments" class="comments-section">
+            <h2>Client Comments</h2>
+            <form action="submit_comment.php" method="POST">
+                <label for="client-name">Your Name:</label><br>
+                <input type="text" id="client-name" name="client_name" required><br><br>
+                
+                <label for="client-comment">Your Comment:</label><br>
+                <textarea id="client-comment" name="client_comment" rows="4" required></textarea><br><br>
+                
+                <button type="submit" class="btn">Submit Comment</button>
+            </form>
+        </section>
+
+        <a href="terms.html" class="btn">Terms of Use</a>
+    </div>
+    <footer id="contact" class="footer">
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/fourferrets_travel" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/four.ferrets.travels" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:info@fourferrets.net"><i class="fas fa-envelope"></i></a>
+            <a href="phones.html" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="whatsapp-numbers.html" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
